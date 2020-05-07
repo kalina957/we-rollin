@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Roboto+Slab:700&display=swap');
+/* colours */
+:root{
+  --primary: #FFE9D2;
+  --secondary: #FFE1C4;
+  --title: rgb(0, 0, 0);
+}
+body{
+ background-color:  rgb(255,255,255);
+}
+
+
+/* events styles */
+.recipes{
+  margin-top: 20px;
+  border: 1px solid rgb(80, 79, 79,0.5);
+  border-radius: 2%;
+  box-shadow:  -5px 7px 5px rgba(90,90,90,0.8);
+}
+.card-panel.recipe{
+  border-radius: 8px;
+  border: 1px solid rgb(80, 79, 79) ;
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 0px 1px 3px rgba(90,90,90,0.1);
+  display: grid;
+  grid-template-columns: 3fr 7fr ;
+  grid-template-areas: "image details delete";
+  position: relative;
+}.card-panel-add-event{
+  border-radius: 8px;
+  border: 1px solid rgb(80, 79, 79) ;
+  padding: 10px;
+  box-shadow: 0px 1px 3px rgba(90,90,90,0.1);
+  display: grid;
+  grid-template-columns: 3fr 7fr ;
+  grid-template-areas: "image details delete";
+  position: relative;
+}
+.recipe img{
+  grid-area: image;
+height: 20vw;
+width: 20vw;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  
+}
+.recipe-details{
+  grid-area: details;
+  margin-top: 6px;
+  padding-left: 10px;
+}
+
+.recipe-title{
+  font-size: 2.5vh;
+  font-weight: bold;
+  color: var(--title);
+}
+.recipe-ingredients{
+  font-size: 2vh;
+}
+
+/* form-styles */
+.add-btn{
+  background: var(--title) !important;
+  margin: 20px;
+}
+input{
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+.side-form button{
+  background: var(--title);
+  box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
+}
+form .input-field{
+  margin-top: 30px;
+}
+.logoImg{
+  table-layout: fixed;
+  justify-content: space-between; 
+  padding: 10px; 
+  margin: 0px;
+  padding: 0px;
+}
+.buttonFilter{
+  background-color: black;
+  color:white;
+  font-size: 16px;
+  border: 2px;
+   height: 48px;
+   margin: 0 auto;
+   margin-top: 5px;
+   width: 12vh;
+   border-radius: 10px;
+
+}
+.headerMain{
+  padding:0px;
+  margin: 10px;
+}
+.headerElement{
+  font-family: 'Roboto Slab', serif;
+  font-size: 5vh;
+  align-self: center;
+  color: black;
+  margin: 0 auto;
+  text-align: center;;
+}
+.imgMainWrap{
+  margin: 0px;
+  padding: 0px;
+} 
+.imgMain{
+  padding:0px;
+  margin: 10px;
+}
+.headerContainer{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  
+}
+.pageWrapper{
+  margin:0px 0px 60px 0px;
+  min-height: 800px;
+}
+.map{
+padding: 5px 0px 0px 0px;
+width: 100%;
+height: auto;
+}
+.img{
+  max-width: 150px;
+  max-height: 150px;
+}
+.headerAddElement{
+  font-size: 0.5rem;
+}
+.tagAddEvent{
+  color: white;
+  font-style: normal;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.linkAddEvent{
+  margin: 0 auto;
+}
+.imgUpload{
+  height: 13rem;
+}
+@media only screen and (max-width: 600px) {
+  .map {
+      
+    }
+}
